@@ -16,6 +16,7 @@ use hex;
 
 #[macro_use]
 extern crate clap;
+extern crate vdf;
 
 use std::{cell::RefCell, fs::File, io::Read, rc::Rc, u64};
 use vdf::{InvalidProof, PietrzakVDFParams, VDFParams, WesolowskiVDFParams, VDF};

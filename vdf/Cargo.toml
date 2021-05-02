@@ -27,6 +27,9 @@ classgroup = { path = "../classgroup", version = "^0.1.0" }
 num-traits = "0.2"
 sha2 = "0.8"
 bit-vec = "0.5"
+libc = "0.2.2"  # klk
+hex = "0.3"     # klk
+
 
 [dev-dependencies]
 criterion = ">=0.2"
@@ -36,3 +39,7 @@ hex = "0.3"
 name = "classgroup-bench"
 harness = false
 path = "bench/bench.rs"
+
+# klk
+[lib]
+crate-type = ["cdylib"]
